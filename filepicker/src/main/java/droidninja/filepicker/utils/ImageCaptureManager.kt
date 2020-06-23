@@ -34,7 +34,7 @@ class ImageCaptureManager(private val mContext: Context) {
 
         val contentValues = ContentValues().apply {
             put(MediaStore.MediaColumns.DISPLAY_NAME, imageFileName)
-            put(MediaStore.MediaColumns.MIME_TYPE, "image/mp4")
+            put(MediaStore.MediaColumns.MIME_TYPE, "video/mp4")
         }
 
         currentMediaPath = resolver.insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, contentValues)
